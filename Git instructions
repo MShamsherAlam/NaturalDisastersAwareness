@@ -1,0 +1,73 @@
+---------------------This file includes general instructions for various purposes in git---------------------------
+
+-----------------------------------------------Please refer Q & A in sheets for any queries------------------------
+
+        *using git status at any stage is a good habbit to know whats going on with the repository.
+
+Section 1 ----->     To propose a change to the master branch on git hub
+
+                1. Make sure you are uptodate with the origin master on bitbucket.
+                2. Create a new branch from the parent master branch on your local machine.
+                3. Name the branch according to its purpose. (refer Q&A for example)
+                4. Checkout the newly made branch.
+                5. Now make the changes in the code that you want to propose or add to the master branch on origin.
+                6. Once you have made appropriate changes push the changes to the origin.
+                7. Make sure you are pushing the "newly made branch" to the origin and "NOT pushing the master branch".
+                8. Once you push the branch to origin, you can now make a pull request (refer to Section 2).
+                9. Now the origin owner will view your proposal and decide whether to put or need further changes.
+                10.The owner will notify you with whatever changes need to be made or he can accept the pull request.
+                11.Once the changes are made the branch maybe deleted. (view Q&A for queries)
+                
+                     Git commands to follow up step by step (refer Q&A for queries)
+                    
+                1. git pull origin master
+                2. git branch name_of_branch
+                4. git checkout name_of_branch
+                5. git add .  | git add file_name
+                   git commit -m 'add a commit message'
+                6. git push origin name_of_branch
+                8. refer section 2 for how to make pull requests.
+                9. Check pull requests for status.
+                
+
+Section 2 ----->     How to do pull requests
+
+                1. Once you've followed the steps on Section 1 you can follow these steps on the website(github/bitbucket).
+                2. After pushing your new branch to origin view the origin repository.
+                3. Select your newly made branch.
+                4. Click pull request.
+                5. Make sure you have origin master branch selected for base repository.
+                6. Now make sure you have name_of_branch branch selected for head repository.
+                7. Give a short comment for example "Please checkout my changes".
+                8. Now click create pull request.
+                
+Section 3 ----->     How to commit any changes to local machine
+
+                1. First make sure you are in the right branch.
+                2. Make the changes in the respective file.
+                3. Add the modified file to the staging area.
+                4. Commit the changes with a short message in present tense like 'add a login button'
+                5. Only the changes in the staging area is commited on step 4.
+                6. Making a commit after any logical change to the code is a good habbit :)
+                
+                     Git commands to follow up step by step
+                     
+                1. git branch           (shows all branches available)
+                   git checkout branch_name
+                3. git add file_name
+                4. git commit -m 'make a commit'
+                
+Section 4 ----->     How to clone any repository on site to your local machine
+                
+                1. Find the link to clone on the repository.
+                2. Copy this link.
+                3. now use following code to clone the repo locally on the system.
+                
+                    git clone paste_link_here
+                    
+Section 5 ----->     How to fork someone's repo
+                1. Open the repository that you want to fork.
+                2. It should be the owner's repository.
+                3. You can simply fork it by clicking fork button on the page.
+                4. This will make a copy of the repo of his current version and include that repository to your account.
+                5. You can now clone this repository to your local machine. (refer section 4)

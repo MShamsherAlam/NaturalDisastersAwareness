@@ -1,0 +1,18 @@
+Steps involved in setting up git for our project
+
+1. Install git bash (use all default options, change path if necessary)
+2. Open file explorer. make a folder named topantisecret in any location/directory of your pref. (to keep all projects together)
+3. Open bitbucket website. login to your account. open your repositories.
+4. Open emergency-website repo.
+5. Click Clone button under actions tab on the left side.
+6. Copy the entire line inside.
+7. Open git bash app (similar to console)
+8. go to the path so that you are inside topantisecret folder.
+9. Paste and enter the line copied before (in clipboard).
+11. This should make another folder named emergency-website.
+12. This should fetch all files and create a .git folder (hidden type) inside emergency-website folder.
+13. IMPORTANT : Make sure .Git hidden folder is there. If its not showing make sure show hidden folders is enabled in options. If not there still repeat the cloning process.
+14. Now go back to git bash and go to path inside emergency-website.
+15. It should now show a word in a bracket like (master) at the end of last line. This means you are in master branch of this repository.
+16. Type "git status" and enter.
+17. If its all clean up to date with origin/master. You are good to go.
